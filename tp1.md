@@ -709,6 +709,14 @@ System Idle Process : c'est le programme qui tourne quand l'ordinateur n'a rien 
 
 System : c'est un programme qui se lance quand vous allumez votre PC.
 
+smss.exe : c'est le programme de gestionnaire de session du sous-système, il gère toutes les app au démarrages.
+
+csrss.exe : c'est un programme qui sert à gérer les fenêtres et les éléments graphiques de Windows.
+
+- déterminer les processus lancés par l'utilisateur qui est full admin sur la machine
+
 ### Scripting
 
-[]()
+Script 1 : [lien](script1.bat)
+
+Script 2 : [lien](script2.bat)
