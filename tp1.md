@@ -715,8 +715,167 @@ csrss.exe : c'est un programme qui sert à gérer les fenêtres et les élément
 
 - déterminer les processus lancés par l'utilisateur qui est full admin sur la machine
 
-### Scripting
+## Scripting
 
-Script 1 : [lien](script1.bat)
+- Script 1 : [lien](script1.bat)
 
-Script 2 : [lien](script2.bat)
+- Script 2 : [lien](script2.bat)
+
+### Gestion de softs
+
+- Expliquer l'intérêt de l'utilisation d'un gestionnaire de paquets
+
+L'intérêt d'utiliser un gestionnaire de paquets pour le téléchargement sur internet est la sécurité ajouté par le téléchargement en direct. Aussi, cela nous permet d'être sûr que nous recevons bien le paquets qu'on veut télécharger. Les gestionnaire de paquets ont aussi des mesure de sécurité pour le téléchargement.
+
+- Utiliser un gestionnaire de paquet propres à votre OS pour
+
+  - lister tous les paquets déjà installés
+
+```powershell
+PS C:\Users\arthu> choco list -li
+Chocolatey v0.10.15
+chocolatey 0.10.15
+chocolatey-core.extension 1.3.5.1
+chocolatey-dotnetfx.extension 1.0.1
+chocolatey-visualstudio.extension 1.8.1
+chocolatey-windowsupdate.extension 1.0.4
+dotnetfx 4.8.0.20190930
+KB2919355 1.0.20160915
+KB2919442 1.0.20160915
+KB2999226 1.0.20181019
+KB3033929 1.0.5
+KB3035131 1.0.3
+python2 2.7.17
+vcredist140 14.24.28127.4
+visualstudio-installer 2.0.1
+visualstudio2017buildtools 15.9.21.0
+15 packages installed.
+
+Active Directory Authentication Library pour SQL Server|14.0.800.90
+Adobe Creative Cloud|5.1.0.407
+AudioWizard|1.0.12.1
+Badlion Client 2.11.3|2.11.3
+Blitz 1.8.0|1.8.0
+BlueStacks App Player|4.190.0.5002
+Browser pour SQL Server 2016|13.1.4001.0
+CodeBlocks|17.12
+Discord|0.0.306
+Enregistreur VSS Microsoft pour SQL Server 2016|13.1.4001.0
+Epic Games Launcher|1.1.220.0
+f.lux|
+Fichiers de support d installation de Microsoft SQL Server 2008|10.3.5500.0
+GIMP 2.10.12|2.10.12
+Git version 2.23.0.windows.1|2.23.0.windows.1
+GitHub Desktop|2.2.4
+GNS3|2.2.5
+Google Chrome|81.0.4044.129
+Intel(R) Computing Improvement Program|2.4.05718
+Intel(R) Processor Graphics|26.20.100.8141
+Intel(R) Rapid Storage Technology|16.8.2.1002
+Intel(R) Wireless Bluetooth(R)|21.80.0.3
+Intel® Driver &amp; Support Assistant|20.4.17.5
+Intel® OptaneT Pinning Explorer Extensions|16.8.2.1002
+Intel® PROSet/Wireless Software|20.80.0.0u
+IntelliJ IDEA 2019.2.4|192.7142.36
+Java 8 Update 251 (64-bit)|8.0.2510.8
+JetBrains PhpStorm 2019.2.4|192.7142.41
+League of Legends|
+Legends of Runeterra|
+Microsoft .NET Framework 4.5 Multi-Targeting Pack|4.5.50710
+Microsoft .NET Framework 4.5.1 Multi-Targeting Pack|4.5.50932
+Microsoft .NET Framework 4.5.1 Multi-Targeting Pack (Français)|4.5.50932
+Microsoft .NET Framework 4.5.1 SDK|4.5.51641
+Microsoft .NET Framework 4.5.1 SDK (Français)|4.5.51641
+Microsoft .NET Framework 4.5.2 Multi-Targeting Pack|4.5.51209
+Microsoft .NET Framework 4.5.2 Multi-Targeting Pack (Français)|4.5.51209
+Microsoft Help Viewer 1.1|1.1.40219
+Microsoft Help Viewer 1.1 Language Pack - FRA|1.1.40219
+Microsoft Help Viewer 2.2|2.2.23107
+Microsoft MPI (7.0.12437.8)|7.0.12437.8
+Microsoft ODBC Driver 13 for SQL Server|14.0.800.90
+Microsoft Office 365 ProPlus - fr-fr|16.0.12527.20442
+Microsoft OneDrive|19.232.1124.0012
+Microsoft SQL Server 2012 Native Client |11.3.6518.0
+Microsoft SQL Server 2016 (64-bit)|
+Microsoft SQL Server 2016 Setup (English)|13.1.4259.0
+Microsoft SQL Server 2016 T-SQL Language Service |13.0.14500.10
+Microsoft SQL Server 2017 RC1|
+Microsoft SQL Server Data-Tier Application Framework (x86) - fr-FR|14.0.3757.2
+Microsoft SQL Server Management Studio - 17.2|14.0.17177.0
+Microsoft SQL Server 2014 Management Objects |12.0.2000.8
+Microsoft SQL Server 2016 T-SQL ScriptDom|13.1.4001.0
+Microsoft System CLR Types pour SQL Server 2017 RC1|14.0.800.90
+Microsoft System CLR Types pour SQL Server 2014|12.0.2402.11
+Microsoft Teams|1.3.00.8663
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.4148|9.0.30729.4148
+Microsoft Visual C++ 2008 Redistributable - x64 9.0.30729.6161|9.0.30729.6161
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.4148|9.0.30729.4148
+Microsoft Visual C++ 2008 Redistributable - x86 9.0.30729.6161|9.0.30729.6161
+Microsoft Visual C++ 2010  x64 Redistributable - 10.0.40219|10.0.40219
+Microsoft Visual C++ 2010  x86 Redistributable - 10.0.40219|10.0.40219
+Microsoft Visual C++ 2012 Redistributable (x64) - 11.0.61030|11.0.61030.0
+Microsoft Visual C++ 2012 Redistributable (x86) - 11.0.61030|11.0.61030.0
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.21005|12.0.21005.1
+Microsoft Visual C++ 2013 Redistributable (x64) - 12.0.40660|12.0.40660.0
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005|12.0.21005.1
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.21005|12.0.21005.1
+Microsoft Visual C++ 2013 Redistributable (x86) - 12.0.40660|12.0.40660.0
+Microsoft Visual C++ 2015-2019 Redistributable (x64) - 14.24.28127|14.24.28127.4
+Microsoft Visual C++ 2015-2019 Redistributable (x86) - 14.23.27820|14.23.27820.0
+Microsoft Visual Studio Code (User)|1.44.2
+Microsoft Visual Studio Installer|1.18.1104.625
+Minecraft Launcher|1.0.0.0
+Module linguistique Microsoft Help Viewer 2.2 - FRA|2.2.23107
+Mozilla Firefox 75.0 (x64 fr)|75.0
+Mozilla Maintenance Service|69.0.2
+Nmap 7.80|7.80
+Node.js|12.16.1
+Npcap 0.9983|0.9983
+NVIDIA GeForce Experience 3.20.3.63|3.20.3.63
+NVIDIA Logiciel système PhysX 9.19.0218|9.19.0218
+NVIDIA Pilote graphique 445.87|445.87
+Oracle VM VirtualBox 6.1.4|6.1.4
+Overwolf|0.142.0.22
+Prise en charge linguistique de Microsoft Visual Studio Tools for Applications 2015|14.0.23107.20
+Python 3.7.6 (64-bit)|3.7.6150.0
+Python Launcher|3.7.6925.0
+Service de langage T-SQL Microsoft SQL Server 2017 RC1|14.0.17177.0
+Stratégies Microsoft SQL Server 2017 RC1|14.0.800.90
+Teams Machine-Wide Installer|1.2.0.17057
+TFTactics|0.3.8
+TortoiseSVN 1.13.1.28686 (64 bit)|1.13.28686
+VMware VIX|1.15.0.00000
+Wampserver64 3.1.9|3.1.9
+Windows SDK AddOn|10.1.0.0
+Windows Software Development Kit - Windows 10.0.17763.132|10.1.17763.132
+WinRAR 5.70 (32-bit)|5.70.0
+Wireshark 3.0.6 64-bit|3.0.6
+XAMPP|7.4.5-0
+100 applications not managed with Chocolatey.
+```
+
+- déterminer la provenance des paquets (= quel serveur nous délivre les paquets lorsqu'on installe quelque chose)
+
+## Partage de fichiers
+
+## Chiffrement et notion de confiance
+
+- Expliquer en détail l'utilisation de certificats
+
+L'information principal d'un certificat et la clé publique, le certificat et aussi infalsifiable : il est chiffré pour empêcher toute modification, nominatif : il est délivré à une entité (comme la carte d’identité est délivrée à une personne et une seule) et certifié : il y a le « tampon » de l’autorité qui l’a délivré.
+
+Tous sa permet donc aux cetificats d'être sécurisé.
+
+### Chiffrement de mails
+
+### TLS
+
+### SSH
+
+### SSH avancé
+
+### SSH tunnels
+
+### SSH jumps
+
+## Forwarding de ports at home
