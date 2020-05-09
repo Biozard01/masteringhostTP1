@@ -870,12 +870,20 @@ Tous sa permet donc aux cetificats d'être sécurisé.
 
 ### TLS
 
-### SSH
+- Expliquer
 
-### SSH avancé
+Toutes les URL qui commencent par HTTP utilisent un protocole simple de transfert hypertexte, c’est grâce à ce protocole de réseaux standard que les navigateurs et les serveurs peuvent communiquer en échangeant des données.
 
-### SSH tunnels
+HTTP est un système sans état, ce qui signifie qu’il permet de créer des connexions à la demande. Lorsque vous cliquez sur un lien, une connexion est sollicitée et votre navigateur web envoie la demande au serveur qui répond en ouvrant la page. Plus la connexion est rapide plus les données s’affichent rapidement.
 
-### SSH jumps
+L’unique objectif de HTTP est d’afficher les informations demandées sans se soucier de la façon dont ces informations se déplacent d’un endroit à un autre. Malheureusement, cela signifie que HTTP peut être intercepté et éventuellement détourné, ce qui rend les informations et leurs destinataires vulnérables.
 
-## Forwarding de ports at home
+HTTPS n’est pas l’opposé de HTTP mais plutôt son petit cousin. Tous deux sont des protocoles de transfert hypertexte qui permettent à des données web d’être affichées sur votre écran lorsque vous envoyez une requête. Cependant, HTTPS est légèrement différent, plus avancé et bien plus sécurisé.
+
+En gros, le protocole HTTPS est une extension de HTTP. Le « S » à la fin est l’initiale du mot « Secure » (sécurisé) et il fonctionne grâce au protocole TLS (Transport Layer Security), le successeur du protocole SSL (Secure Sockets Layer), la technologie de sécurité standard pour établir une connexion chiffrée entre un serveur web et un navigateur.
+
+Sans la présence de HTTPS, toutes les données que vous entrez sur un site (ex : nom d’utilisateur, mot de passe, carte bancaire, RIB ou tout autre information requise dans un formulaire) seront envoyées en format de texte brute et seront, par conséquent, vulnérables aux interceptions et à l’espionnage. C’est pour cette raison que vous devriez toujours vérifier qu’un site utilise bien HTTPS avant d’y entrer quelques données que ce soit.
+
+En plus de chiffrer les données transmises entre un serveur et votre navigateur, le protocole TLS authentifie également le serveur auquel vous vous connectez et protège les données transmises de toute altération.
+
+Pour vous aider à comprendre la différence, imaginez que HTTP dans HTTPS est l’équivalent d’une destination, tandis que SSL est l’équivalent d’un voyage. Le premier est chargé d’acheminer les données vers votre écran, le dernier gère la façon dont ces données sont déplacées. En joignant force, ils permettent aux flux de données d’être sécurisés.

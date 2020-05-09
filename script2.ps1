@@ -3,4 +3,5 @@
 # Se script permet, en fonction d'arguments que vous lui passés :  d'exécuter une action, de lock l'écran et d'éteindre le PC après 5 secondes 
 
 Start-Sleep -s 10
-Restart-Computer
+rundll32.exe user32.dll, LockWorkStation
+Stop-Computer
